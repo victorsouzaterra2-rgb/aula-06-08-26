@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci minha Senha</title>
+    <link rel="stylesheet" href="esqueci-senha.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Esqueceu sua Senha?</h1>
+    </header>
+
+    <main>
+        <nav>
+
+            <a href="./login.html">
+                <button class="button-nav" type="button">Faça seu Login!</button>
+            </a>
+
+            <a href="./cadastro.html">
+                <button class="button-nav" type="button">Ainda não tem Cadastro? Acesse aqui!</button>
+
+            </a>
+
+        </nav>
+        <section>
+            <img src="../images/ai-meu-patrao.webp" alt="ta vendo nao" width="150">
+        </section>
+
+        <section>
+            <form action="./login.html" onsubmit="alert('Senha Redefinida. Faça seu Login!')">
+
+                <p>Email:</p>
+                <input type="email" name="email" required placeholder="Digite o Email da sua Conta!">
+
+                <p>*No campo de "Email" digite o email ja cadastrado.</p>
+
+
+                <img src="../images/ai-meu-patrao.webp" alt="e agora?" width="150">
+
+
+                <p>Nova Senha:</p>
+                <input type="password" name="senha" required placeholder="Digite sua nova Senha!">
+
+                <p>*No campo de "Nova Senha" digite sua nova senha.</p>
+
+                <p>Confirme sua Senha:</p>
+                <input type="password" name="senha" required placeholder="Confirme sua nova senha!">
+                <a href="./login.html">
+                    <button id="button-form" type="submit">Confirmar e fazer Login</button>
+                </a>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <b>VS Moto-Peças — Loja conceituada em Campinas/SP, especializada em peças, acessórios e componentes para
+            motocicletas. <br> Trabalhamos com qualidade, confiança e atendimento dedicado para oferecer as melhores
+            soluções para o seu dia a dia sobre duas rodas. <br> Nosso compromisso é unir performance, segurança e
+            tradição no segmento de moto-peças. <br>
+            © 2026 VS Moto-Peças • Campinas - São Paulo • Todos os direitos reservados.
+        </b>
+
+    </footer>
+</body>
+
+</html>

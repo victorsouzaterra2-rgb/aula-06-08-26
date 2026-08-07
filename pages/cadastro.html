@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu Cadastro</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Faça Seu Cadastro!</h1>
+        <link rel="stylesheet" href="cadastro.css">
+    </header>
+
+    <nav>
+
+        <a href="../index.html">
+            <button class="button-nav" type="button">Voltar para a Home.</button>
+        </a>
+        <a href="./login.html">
+            <button class="button-nav" type="button">Fazer Login.</button>
+        </a>
+
+
+    </nav>
+    <hr>
+    <main>
+        <section>
+            <form action="./login.html" onsubmit="alert('Usuário Cadastrado! Faça seu Login')">
+                <p>Nome Completo:</p>
+                <input type="text" name="nome completo" required placeholder="Digite seu Nome!">
+                <p>Email:</p>
+                <input type="email" name="email" required placeholder="Digite seu Email!">
+                <hr>
+                <P>Senha:</P>
+                <input type="password" name="senha" required placeholder="Digite sua Senha!">
+                <p>Confirme sua Senha:</p>
+                <input type="password" name="confirme senha" required placeholder="Confirme sua Senha!">
+                <hr>
+                <p>RG:</p>
+                <input type="number" name="RG" required placeholder="Digite seu RG!">
+                <p>CPF:</p>
+                <input type="number" name="CPF" required placeholder="Digite seu CPF!">
+                <hr>
+                <p>Endereço:</p>
+                <input type="text" name="endereço" required placeholder="Digite o Endereço!">
+                <p>CEP:</p>
+                <input type="number" name="CEP" required placeholder="Digite seu CEP!">
+                <hr>
+                <p>Cidade:</p>
+                <input class="input-cadastro" type="text" name="cidade" required placeholder="Digite sua Cidade!">
+                <p>Estado:</p>
+                <input class="input-cadastro" type="text" name="estado" required placeholder="Digite seu Estado!">
+                <hr>
+                <p>País:</p>
+                <input class="input-cadastro" type="text" name="país" required placeholder="Digite seu País">
+                <p>Data de Nascimento:</p>
+                <input class="input-cadastro" type="date" name="data" required placeholder="Data de Nascimento">
+
+                <button id="btn-cadastro" type="submit">Fazer Cadastro</button>
+
+            </form>
+
+        </section>
+    </main>
+    <hr>
+
+    <footer>
+        <b>VS Moto-Peças — Loja conceituada em Campinas/SP, especializada em peças, acessórios e manutenção para
+            motocicletas. <br> Trabalhamos com produtos de qualidade, atendimento especializado e compromisso com a
+            satisfação dos nossos clientes. <br> Performance, confiança e tradição no universo das duas rodas. <br>
+
+            © 2026 VS Moto-Peças • Campinas - São Paulo • Todos os direitos reservados.
+        </b>
+    </footer>
+</body>
+
+</html>

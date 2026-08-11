@@ -1,57 +1,72 @@
 body {
-    background-image: url("../images/login-img.png");
+    background-color: #F2F2F2;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+
 h1 {
+
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 50px;
-    color: rgb(134, 134, 134);
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #F2F2F2;
+    opacity: 99%;
+
 }
 
 #subtitle {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: rgb(134, 134, 134);
+    color: #F2F2F2;
+
 }
 
+
 h2 {
+
+    border-radius: 30px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
-    color: rgb(134, 134, 134);
+    color: #000000;
 }
 
 h3 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
-    color: rgb(73, 72, 72);
+    color: #F2F2F2;
 }
 
 header {
-
+    background-color: #B8B8B8;
     text-align: center;
+    background-image: url(../images/img-header-2.jpg);
 }
 
 nav {
     text-align: center;
+    background-color: #F2F2F2;
+
 }
 
 .button-nav {
-    width: 300px;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
+    width: 200px;
+    border-style: outset;
+    padding: 10px;
+    border-radius: 20px;
     cursor: pointer;
-    background-color: rgb(135, 127, 255);
+    background-color: rgb(77, 77, 77);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F2F2F2;
     font-size: 15px;
+
 }
 
 section {
@@ -59,7 +74,94 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    background-color: rgb(236, 236, 236);
+    background-image: url(../images/banner-test.png);
+    color: #F2F2F2
+}
+
+#card-prod {
+    background-color: rgb(243, 243, 243);
+
+    padding: 4px;
+    height: 350px;
+    width: 270px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+
+}
+
+#button-container {
+    background-color: #F2F2F2;
+    display: flex;
+
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+#button-text-container {
+    background-color: #F2F2F2;
+    display: flex;
+    gap: 20px;
+    border-radius: 4px;
+
+}
+
+#value-pay {
+    background-color: rgb(255, 164, 164);
+    border-radius: 4px;
+    height: 30px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#card-buy {
+    border-radius: 4px;
+    background-color: rgb(248, 1, 1);
+    border-style: inset;
+    cursor: pointer;
+
+    color: #111111;
+    font-size: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#img-prod {
+
+    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+    border-style: inset;
+}
+
+#card-h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#card-p {
+    margin: 0;
+    font-size: 8px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#rating {
+    font-size: 8px;
+    color: #000000;
+}
+
+#section-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(../images/img-section-card.jpg);
 }
 
 main {

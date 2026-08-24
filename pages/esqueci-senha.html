@@ -11,60 +11,105 @@
 
 <body>
     <header>
-        <h1>Esqueceu sua Senha?</h1>
-    </header>
-    <hr>
-
-    <main>
-        <nav>
-
-            <a href="./login.html">
-                <button class="button-nav" type="button">Faça seu Login!</button>
-            </a>
-
-            <a href="./cadastro.html">
-                <button class="button-nav" type="button">Ainda não tem Cadastro? Acesse aqui!</button>
-
-            </a>
-
-        </nav>
-
-
-        <section>
-            <form action="./login.html" onsubmit="alert('Senha Redefinida. Faça seu Login!')">
-
-                <p>Email:</p>
-                <input type="email" name="email" required placeholder="Digite o Email da sua Conta!">
-
-                <p>*No campo de "Email" digite o email ja cadastrado.</p>
-
-
-                <img src="../images/ai-meu-patrao.webp" alt="e agora?" width="150">
-
-
-                <p>Nova Senha:</p>
-                <input type="password" name="senha" required placeholder="Digite sua nova Senha!">
-
-                <p>*No campo de "Nova Senha" digite sua nova senha.</p>
-
-                <p>Confirme sua Senha:</p>
-                <input type="password" name="senha" required placeholder="Confirme sua nova senha!">
-                <a href="./login.html">
-                    <button id="button-form" type="submit">Confirmar e fazer Login</button>
+        <header class="site-header">
+            <nav class="nav-mobile" aria-label="Menu mobile">
+                <a href="./index.html" class="nav-icon" aria-label="Início">
+                    <img class="nav-icon-img" src="../images/botao-home.png" alt="">
                 </a>
+                <a href="./esqueci-senha.html" class="nav-icon" aria-label="Esqueci a Senha">
+                    <img class="nav-icon-img" src="../images/contato.png" alt="">
+                </a>
+                <a href="./login.html" class="nav-icon" aria-label="Login">
+                    <img class="nav-icon-img" src="../images/aplicativo-web.png" alt="">
+                </a>
+                <a href="./cadastro.html" class="nav-icon" aria-label="Cadastro">
+                    <img class="nav-icon-img" src="../images/cadastro.png" alt="">
+                </a>
+            </nav>
+            <!-- tablet menu -->
+            <aside class="nav-tablet" aria-label="Menu lateral tablet">
+                <p class="brand">VS Moto-Peças</p>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./cadastro.html">Cadastre</a></li>
+                    <li><a href="../pages/login.html">Login</a></li>
+                    <li><a href="../pages/esqueci-senha.html">Esqueci a Senha</a></li>
+                </ul>
+            </aside>
+            <!-- desktop menu -->
+            <nav class="nav-desktop" aria-label="Menu desktop">
+                <p class="brand">VS Moto-Peças</p>
+                <ul>
+                    <li>
 
-            </form>
-        </section>
-    </main>
-    <footer>
-        <b>VS Moto-Peças — Loja conceituada em Campinas/SP, especializada em peças, acessórios e componentes para
-            motocicletas. <br> Trabalhamos com qualidade, confiança e atendimento dedicado para oferecer as melhores
-            soluções para o seu dia a dia sobre duas rodas. <br> Nosso compromisso é unir performance, segurança e
-            tradição no segmento de moto-peças. <br>
-            © 2026 VS Moto-Peças • Campinas - São Paulo • Todos os direitos reservados.
-        </b>
+                        <a href="../index.html"> Inicio
+                            <img class="nav-icon-img" src="../images/botao-home.png" alt="" width="20" height="20">
+                        </a>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html"> Login
+                            <img class="nav-icon-img" src="../images/aplicativo-web.png" alt="" width="20" height="20">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./cadastro.html"> Cadastro
+                            <img class="nav-icon-img" src="../images/cadastro.png" alt="" width="20" height="20">
 
-    </footer>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./esqueci-senha.html"> Esqueci a Senha
+                            <img class="nav-icon-img" src="../images/contato.png" width="20" height="20" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <hr>
+
+        <main>
+            <section class="hero" id="Inicio">
+                <h1>Bem-Vindo a VS Moto-Peças</h1>
+                <p>Esqueceu a senha?</p>
+                <section>
+
+                    <section>
+                        <form action="./login.html" onsubmit="alert('Senha Redefinida. Faça seu Login!')">
+
+                            <p>Email:</p>
+                            <input type="email" name="email" required placeholder="Digite o Email da sua Conta!">
+
+                            <p>*No campo de "Email" digite o email ja cadastrado.</p>
+
+
+                            <img src="../images/ai-meu-patrao.webp" alt="e agora?" width="150">
+
+
+                            <p>Nova Senha:</p>
+                            <input type="password" name="senha" required placeholder="Digite sua nova Senha!">
+
+                            <p>*No campo de "Nova Senha" digite sua nova senha.</p>
+
+                            <p>Confirme sua Senha:</p>
+                            <input type="password" name="senha" required placeholder="Confirme sua nova senha!">
+                            <a href="./login.html">
+                                <button class="button-form" type="submit">Confirmar e fazer Login</button>
+                            </a>
+
+                        </form>
+                    </section>
+        </main>
+        <footer class="site-footer">
+            <b>VS Moto-Peças — Loja conceituada em Campinas/SP, especializada em peças, acessórios e componentes para
+                motocicletas. <br> Trabalhamos com qualidade, confiança e atendimento dedicado para oferecer as melhores
+                soluções para o seu dia a dia sobre duas rodas. <br> Nosso compromisso é unir performance, segurança e
+                tradição no segmento de moto-peças. <br>
+                © 2026 VS Moto-Peças • Campinas - São Paulo • Todos os direitos reservados.
+            </b>
+
+        </footer>
 </body>
 
 </html>

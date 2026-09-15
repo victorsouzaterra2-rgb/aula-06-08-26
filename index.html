@@ -10,29 +10,74 @@
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
+        <nav class="nav-mobile" aria-label="Menu mobile">
+            <a href="./index.html" class="nav-icon" aria-label="Início">
+                <img class="nav-icon-img" src="./images/botao-home.png" alt="">
+            </a>
+            <a href="#contato" class="nav-icon" aria-label="Contato">
+                <img class="nav-icon-img" src="./images/contato.png" alt="">
+            </a>
+            <a href="./pages/login.html" class="nav-icon" aria-label="Login">
+                <img class="nav-icon-img" src="./images/aplicativo-web.png" alt="">
+            </a>
+            <a href="./pages/cadastro.html" class="nav-icon" aria-label="Cadastro">
+                <img class="nav-icon-img" src="./images/cadastro.png" alt="">
+            </a>
+        </nav>
+        <!-- tablet menu -->
+        <aside class="nav-tablet" aria-label="Menu lateral tablet">
+            <p class="brand">VS Moto-Peças</p>
+            <ul>
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./pages/cadastro.html">Cadastre</a></li>
+                <li><a href="./pages/login.html">Login</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </aside>
+        <!-- desktop menu -->
+        <nav class="nav-desktop" aria-label="Menu desktop">
+            <p class="brand">VS Moto-Peças</p>
+            <ul>
+                <li>
 
-        <h1>VS - Moto-Peças</h1>
-        <h3 id="subtitle">Bem Vindo a VS! <br> A melhor moto-peças de Campinas-SP. <br> Qualidade, confiança
-            e performance
-            em cada peça.</h3>
+                    <a href="./index.html"> Inicio
+                        <img class="nav-icon-img" src="./images/botao-home.png" alt="" width="20" height="20">
+                    </a>
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/login.html"> Login
+                        <img class="nav-icon-img" src="./images/aplicativo-web.png" alt="" width="20" height="20">
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/cadastro.html"> Cadastro
+                        <img class="nav-icon-img" src="./images/cadastro.png" alt="" width="20" height="20">
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#contato"> Contato
+                        <img class="nav-icon-img" src="./images/contato.png" width="20" height="20" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
     </header>
 
-    <hr>
-    <nav>
 
-        <a href="./pages/cadastro.html">
-            <button class="button-nav" type="button">Faça seu Cadastro!</button>
-        </a>
-        <a href="./pages/login.html">
-            <button class="button-nav" type="button">Faça seu Login!</button>
-        </a>
-
-    </nav>
-
-    <hr>
     <main>
-        <section id="section-card">
+        <section class="hero" id="Inicio">
+            <h1>Bem-Vindo a VS Moto-Peças</h1>
+            <p>Confira nossos produtos. Temos uma grande variedade de peças para motos em geral. Aproveite as ofertas!
+            </p>
+
+        </section>
+        <!-- aqui comeca o card -->
+        <section class="section-card">
+
             <article id="card-prod">
                 <img id="img-prod" src="./images/farol-150.jpg" alt="imagefarol">
                 <div id="button-container">
@@ -123,13 +168,16 @@
             </article>
 
         </section>
-        <h2>Nossos Produtos</h2>
-        <section>
 
+        <section class="produto" id="suspensao">
+            <h2>Nossos Produtos</h2>
 
             <h3>Suspensão Yamaha crosser 150</h3>
 
-            <img src="./images/amortecedor-scud-c-150.jpg" alt="" width="200">
+            <img class="foto foto-mobile" src="./images/amortecedor-scud-c-150.jpg" alt="" width="150">
+            <img class="foto foto-tablet" src="./images/amortecedor-scud-c-150.jpg" alt="" width="200">
+            <img class="foto foto-desktop" src="./images/amortecedor-scud-c-150.jpg" alt="" width="200">
+
 
 
             <ul>
@@ -145,8 +193,7 @@
 
             <b>Valor: R$469,90</b>
 
-            <a
-                href="https://www.podiomotos.com.br/moto-pecas/amortecedores/amortecedor-pro-link-xtz-150-crosser-20142022">
+            <a href="./pages/produto.html">
                 <button class="button-buy" type="button">Comprar!</button>
 
             </a>
@@ -154,12 +201,16 @@
 
         </section>
         <hr>
-        <section>
+        <section class="produto" id="farol">
 
 
             <h3>Farol dianteiro Yamaha Crosser 150</h3>
 
-            <img src="./images/farol-150.jpg" alt="" width="200">
+            <img class="foto foto-mobile" src="./images/farol-150.jpg" alt="" width="150">
+            <img class="foto foto-tablet" src="./images/farol-150.jpg" alt="" width="200">
+            <img class="foto foto-desktop" src="./images/farol-150.jpg" alt="" width="200">
+
+
 
             <ul>
                 <li>Tecnologia Full LED: Iluminação total em LED para maior durabilidade e economia de bateria.</li>
@@ -169,18 +220,21 @@
 
             <b>Valor: R$2.990,00</b>
 
-            <a href="https://www.motosnenoshop.com.br/farol-dianteiro-conjunto-2cch430000">
+            <a href="./pages/produto.html">
                 <button class="button-buy" type="button">Comprar!</button>
             </a>
 
         </section>
         <hr>
 
-        <section>
+        <section class="produto" id="cabecote">
 
             <h3>Cabeçote Crosser 150</h3>
 
-            <img src="./images/cabeçote-150.jpg" alt="" height="200">
+            <img class="foto foto-mobile" src="./images/cabeçote-150.jpg" alt="" height="200" width="150">
+            <img class="foto foto-tablet" src="./images/cabeçote-150.jpg" alt="" height="200" width="200">
+            <img class="foto foto-desktop" src="./images/cabeçote-150.jpg" alt="" height="200" width="200">
+
 
 
             <ul>
@@ -204,7 +258,7 @@
 
     </main>
     <hr>
-    <footer>
+    <footer class="site-footer" id="contato">
         <b>VS Moto-Peças — Loja conceituada em Campinas/SP, especializada em peças, acessórios e manutenção para
             motocicletas. <br> Trabalhamos com produtos de qualidade, atendimento especializado e compromisso com a
             satisfação dos nossos clientes. <br> Performance, confiança e tradição no universo das duas rodas.

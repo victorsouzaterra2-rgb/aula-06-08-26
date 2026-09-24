@@ -289,3 +289,102 @@ body {
         padding: 24px 48px;
     }
 }
+
+.card-pedido {
+    background-color: #ffffff;
+    border: 2px solid hsl(231, 79%, 34%);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.numero-pedido {
+    font-weight: bold;
+    color: hsl(231, 79%, 34%);
+}
+
+.status {
+    font-weight: bold;
+    color: #2e7d32;
+    background-color: #e8f5e9;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.detalhes-pedido {
+    margin-top: 15px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+}
+
+.resumo-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.img-resumo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.resumo-info h3 {
+    font-size: 1.1rem;
+    color: hsl(231, 79%, 34%);
+    margin-bottom: 6px;
+}
+
+.resumo-info p {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 3px 0;
+}
+
+.desconto-destaque {
+    color: #2e7d32 !important;
+    font-weight: bold;
+}
+
+.total-destaque {
+    font-size: 1.1rem !important;
+    color: hsl(0, 80%, 45%) !important;
+    font-weight: bold;
+    margin-top: 6px !important;
+}
+
+.acoes-final {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.button-buy {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: clamp(10px, 2.5vw, 16px) clamp(16px, 4vw, 24px);
+    font-size: clamp(14px, 3.5vw, 18px);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: hsl(0, 99%, 49%);
+    color: #ffffff;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.button-buy:hover {
+    background-color: hsl(0, 99%, 42%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

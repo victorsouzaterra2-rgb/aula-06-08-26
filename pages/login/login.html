@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - VS Moto-Peças</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav-mobile" aria-label="Menu mobile">
+            <a href="../../index.html" class="nav-icon" aria-label="Início">
+                <img class="nav-icon-img" src="../../images/botao-home.png" alt="Início">
+            </a>
+            <a href="../esqueci-senha.html" class="nav-icon" aria-label="Esqueci a Senha">
+                <img class="nav-icon-img" src="../../images/contato.png" alt="Esqueci a Senha">
+            </a>
+            <a href="./login.html" class="nav-icon" aria-label="Login">
+                <img class="nav-icon-img" src="../../images/aplicativo-web.png" alt="Login">
+            </a>
+            <a href="../cadastro/cadastro.html" class="nav-icon" aria-label="Cadastro">
+                <img class="nav-icon-img" src="../../images/cadastro.png" alt="Cadastro">
+            </a>
+        </nav>
+        <!-- tablet menu -->
+        <aside class="nav-tablet" aria-label="Menu lateral tablet">
+            <p class="brand">VS Moto-Peças</p>
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../cadastro/cadastro.html">Cadastre</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="../esqueci-senha.html">Esqueci a Senha</a></li>
+                <li><a href="../../index.html#contato">Contato</a></li>
+            </ul>
+        </aside>
+        <!-- desktop menu -->
+        <nav class="nav-desktop" aria-label="Menu desktop">
+            <p class="brand">VS Moto-Peças</p>
+            <ul>
+                <li>
+                    <a href="../../index.html"> Início
+                        <img class="nav-icon-img" src="../../images/botao-home.png" alt="" width="20" height="20">
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.html"> Login
+                        <img class="nav-icon-img" src="../../images/aplicativo-web.png" alt="" width="20" height="20">
+                    </a>
+                </li>
+                <li>
+                    <a href="../cadastro/cadastro.html"> Cadastro
+                        <img class="nav-icon-img" src="../../images/cadastro.png" alt="" width="20" height="20">
+                    </a>
+                </li>
+                <li>
+                    <a href="../esqueci-senha.html"> Esqueci a Senha
+                        <img class="nav-icon-img" src="../../images/contato.png" width="20" height="20" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="Inicio">
+            <h1>Bem-Vindo a VS Moto-Peças</h1>
+            <p>Faça seu Login</p>
+        </section>
+
+        <section class="section-form">
+            <form onsubmit="validarLogin(event)">
+                <p>Login:</p>
+                <input id="login-login" type="email" name="email" required placeholder="Digite seu Email!">
+
+                <p>Senha:</p>
+                <input id="senha-senha" type="password" name="senha" required placeholder="Digite Sua Senha!">
+
+                <button class="button-form" type="submit">Fazer Login</button>
+                <a href="../esqueci-senha.html">
+                    <button class="button-form" type="button">Esqueceu a Senha?</button>
+                </a>
+            </form>
+            <img id="img-tela-l" src="../../images/img-section-dms.jpg" alt="img-login">
+        </section>
+        <hr>
+    </main>
+
+    <footer class="site-footer">
+        <b>VS Moto-Peças — Loja conceituada em Campinas/SP, especializada em peças, acessórios e manutenção para motocicletas. <br> Trabalhamos com produtos de qualidade, atendimento especializado e compromisso com a satisfação dos nossos clientes. <br> Performance, confiança e tradição no universo das duas rodas. <br>
+            <br>
+            © 2026 VS Moto-Peças • Campinas - São Paulo • Todos os direitos reservados.
+        </b>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

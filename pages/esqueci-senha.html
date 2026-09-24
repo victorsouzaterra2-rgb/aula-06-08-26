@@ -1,115 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esqueci minha Senha</title>
-    <link rel="stylesheet" href="esqueci-senha.css">
-
+    <title>Esqueci minha Senha - VS Moto-Peças</title>
+    <link rel="stylesheet" href="./esqueci-senha.css">
 </head>
 
 <body>
-    <header>
-        <header class="site-header">
-            <nav class="nav-mobile" aria-label="Menu mobile">
-                <a href="./index.html" class="nav-icon" aria-label="Início">
-                    <img class="nav-icon-img" src="../images/botao-home.png" alt="">
-                </a>
-                <a href="./esqueci-senha.html" class="nav-icon" aria-label="Esqueci a Senha">
-                    <img class="nav-icon-img" src="../images/contato.png" alt="">
-                </a>
-                <a href="./login.html" class="nav-icon" aria-label="Login">
-                    <img class="nav-icon-img" src="../images/aplicativo-web.png" alt="">
-                </a>
-                <a href="./cadastro.html" class="nav-icon" aria-label="Cadastro">
-                    <img class="nav-icon-img" src="../images/cadastro.png" alt="">
-                </a>
-            </nav>
-            <!-- tablet menu -->
-            <aside class="nav-tablet" aria-label="Menu lateral tablet">
-                <p class="brand">VS Moto-Peças</p>
-                <ul>
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="./cadastro.html">Cadastre</a></li>
-                    <li><a href="../pages/login.html">Login</a></li>
-                    <li><a href="../pages/esqueci-senha.html">Esqueci a Senha</a></li>
-                </ul>
-            </aside>
-            <!-- desktop menu -->
-            <nav class="nav-desktop" aria-label="Menu desktop">
-                <p class="brand">VS Moto-Peças</p>
-                <ul>
-                    <li>
+    <header class="site-header">
+        <nav class="nav-mobile" aria-label="Menu mobile">
+            <a href="../index.html" class="nav-icon" aria-label="Início">
+                <img class="nav-icon-img" src="../images/botao-home.png" alt="Início">
+            </a>
+            <a href="./esqueci-senha.html" class="nav-icon" aria-label="Esqueci a Senha">
+                <img class="nav-icon-img" src="../images/contato.png" alt="Esqueci a Senha">
+            </a>
+            <a href="./login/login.html" class="nav-icon" aria-label="Login">
+                <img class="nav-icon-img" src="../images/aplicativo-web.png" alt="Login">
+            </a>
+            <a href="./cadastro/cadastro.html" class="nav-icon" aria-label="Cadastro">
+                <img class="nav-icon-img" src="../images/cadastro.png" alt="Cadastro">
+            </a>
+        </nav>
+        <!-- tablet menu -->
+        <aside class="nav-tablet" aria-label="Menu lateral tablet">
+            <p class="brand">VS Moto-Peças</p>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./cadastro/cadastro.html">Cadastre</a></li>
+                <li><a href="./login/login.html">Login</a></li>
+                <li><a href="./esqueci-senha.html">Esqueci a Senha</a></li>
+                <li><a href="../index.html#contato">Contato</a></li>
+            </ul>
+        </aside>
+        <!-- desktop menu -->
+        <nav class="nav-desktop" aria-label="Menu desktop">
+            <p class="brand">VS Moto-Peças</p>
+            <ul>
+                <li>
+                    <a href="../index.html"> Início
+                        <img class="nav-icon-img" src="../images/botao-home.png" alt="" width="20" height="20">
+                    </a>
+                </li>
+                <li>
+                    <a href="./login/login.html"> Login
+                        <img class="nav-icon-img" src="../images/aplicativo-web.png" alt="" width="20" height="20">
+                    </a>
+                </li>
+                <li>
+                    <a href="./cadastro/cadastro.html"> Cadastro
+                        <img class="nav-icon-img" src="../images/cadastro.png" alt="" width="20" height="20">
+                    </a>
+                </li>
+                <li>
+                    <a href="./esqueci-senha.html"> Esqueci a Senha
+                        <img class="nav-icon-img" src="../images/contato.png" width="20" height="20" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
 
-                        <a href="../index.html"> Inicio
-                            <img class="nav-icon-img" src="../images/botao-home.png" alt="" width="20" height="20">
-                        </a>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./login.html"> Login
-                            <img class="nav-icon-img" src="../images/aplicativo-web.png" alt="" width="20" height="20">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./cadastro.html"> Cadastro
-                            <img class="nav-icon-img" src="../images/cadastro.png" alt="" width="20" height="20">
+    <main>
+        <section class="hero" id="Inicio">
+            <h1>Bem-Vindo a VS Moto-Peças</h1>
+            <p>Esqueceu a senha?</p>
+        </section>
 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./esqueci-senha.html"> Esqueci a Senha
-                            <img class="nav-icon-img" src="../images/contato.png" width="20" height="20" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <section class="section-form">
+            <form action="./login/login.html" onsubmit="alert('Senha redefinida com sucesso! Faça seu Login.'); return true;">
+                <p>Email:</p>
+                <input type="email" name="email" required placeholder="Digite o Email da sua Conta!">
+                <p>*No campo de "Email" digite o email já cadastrado.</p>
 
-        </header>
-        <hr>
+                <img src="../images/ai-meu-patrao.webp" alt="e agora?" width="150" style="display:block; margin: 10px auto;">
 
-        <main>
-            <section class="hero" id="Inicio">
-                <h1>Bem-Vindo a VS Moto-Peças</h1>
-                <p>Esqueceu a senha?</p>
-                <section>
+                <p>Nova Senha:</p>
+                <input type="password" name="nova-senha" required placeholder="Digite sua nova Senha!">
+                <p>*No campo de "Nova Senha" digite sua nova senha.</p>
 
-                    <section>
-                        <form action="./login.html" onsubmit="alert('Senha Redefinida. Faça seu Login!')">
+                <p>Confirme sua Senha:</p>
+                <input type="password" name="confirma-senha" required placeholder="Confirme sua nova senha!">
 
-                            <p>Email:</p>
-                            <input type="email" name="email" required placeholder="Digite o Email da sua Conta!">
+                <button class="button-form" type="submit">Confirmar e fazer Login</button>
+            </form>
+        </section>
+    </main>
 
-                            <p>*No campo de "Email" digite o email ja cadastrado.</p>
-
-
-                            <img src="../images/ai-meu-patrao.webp" alt="e agora?" width="150">
-
-
-                            <p>Nova Senha:</p>
-                            <input type="password" name="senha" required placeholder="Digite sua nova Senha!">
-
-                            <p>*No campo de "Nova Senha" digite sua nova senha.</p>
-
-                            <p>Confirme sua Senha:</p>
-                            <input type="password" name="senha" required placeholder="Confirme sua nova senha!">
-                            <a href="./login.html">
-                                <button class="button-form" type="submit">Confirmar e fazer Login</button>
-                            </a>
-
-                        </form>
-                    </section>
-        </main>
-        <footer class="site-footer">
-            <b>VS Moto-Peças — Loja conceituada em Campinas/SP, especializada em peças, acessórios e componentes para
-                motocicletas. <br> Trabalhamos com qualidade, confiança e atendimento dedicado para oferecer as melhores
-                soluções para o seu dia a dia sobre duas rodas. <br> Nosso compromisso é unir performance, segurança e
-                tradição no segmento de moto-peças. <br>
-                © 2026 VS Moto-Peças • Campinas - São Paulo • Todos os direitos reservados.
-            </b>
-
-        </footer>
+    <footer class="site-footer">
+        <b>VS Moto-Peças — Loja conceituada em Campinas/SP, especializada em peças, acessórios e componentes para
+            motocicletas. <br> Trabalhamos com qualidade, confiança e atendimento dedicado para oferecer as melhores
+            soluções para o seu dia a dia sobre duas rodas. <br> Nosso compromisso é unir performance, segurança e
+            tradição no segmento de moto-peças. <br>
+            <br>
+            © 2026 VS Moto-Peças • Campinas - São Paulo • Todos os direitos reservados.
+        </b>
+    </footer>
 </body>
 
 </html>

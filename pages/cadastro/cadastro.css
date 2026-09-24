@@ -65,29 +65,48 @@ body {
     display: none;
 }
 
-.produto h2 {
-    font-size: 6vw;
-    color: hsl(231, 79%, 34%);
-    margin-bottom: 3vw;
+.section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(16px, 4vw, 32px);
+    padding: clamp(16px, 4vw, 40px);
 }
 
-.produto li {
-    font-size: 4vw;
-    margin-top: 3vw;
-    color: hsl(244, 63%, 18%);
-}
-
-.foto {
-    display: none;
+#img-tela-l {
     width: 100%;
-    height: auto;
+    max-width: 400px;
+    height: clamp(250px, 40vh, 450px);
+    object-fit: cover;
     border-radius: 8px;
-    margin-top: 2vw;
+    order: -1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 4px;
+}
+
+.button-form {
+    width: 100%;
+    padding: clamp(10px, 2.5vw, 14px);
+    margin-top: 12px;
+    font-size: clamp(14px, 3vw, 16px);
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: hsl(239, 100%, 60%);
+    color: #fff;
+    transition: background-color 0.2s ease;
 }
 
 
-.foto-mobile {
-    display: block;
+.button-form:hover {
+    background-color: hsl(239, 100%, 50%);
 }
 
 form a {
@@ -103,6 +122,18 @@ form input {
     box-sizing: border-box;
 }
 
+b {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    margin-top: 70px;
+
+    text-align: center;
+
+}
+
 @media (min-width: 480px) and (max-width: 766.98px) {
     body {
         background-color: hsl(109, 65%, 89%);
@@ -110,6 +141,15 @@ form input {
 
     .site-footer {
         display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        font-size: 1.8vw;
+        background-color: hsl(109, 64%, 82%);
+        color: hsl(131, 50%, 24%);
+        margin-left: 220px;
+        /* mesma largura da .nav-tablet */
+        padding: clamp(16px, 3vw, 24px);
+        box-sizing: border-box;
     }
 
     main {
@@ -160,31 +200,6 @@ form input {
     .hero p {
         font-size: 2.6vw;
         color: hsl(129, 37%, 22%);
-    }
-
-    .produto h2 {
-        font-size: 3.6vw;
-        color: hsl(131, 50%, 24%);
-    }
-
-    .produto p,
-    .produto li {
-        font-size: 2.4vw;
-        color: #234d29;
-    }
-
-    .site-footer {
-        font-size: 2.2vw;
-        background-color: hsl(109, 64%, 82%);
-        color: hsl(131, 50%, 24%);
-    }
-
-    .foto-mobile {
-        display: none;
-    }
-
-    .foto-tablet {
-        display: block;
     }
 }
 
@@ -258,42 +273,15 @@ form input {
         color: hsl(0, 0%, 55%);
     }
 
-    .produto {
-        padding: 40px 48px;
+    .section-form {
+        flex-direction: row;
+        align-items: stretch;
     }
 
-    .produto h2,
-    .produto h3 {
-        font-size: 1.75rem;
-        color: hsl(0, 1%, 37%)
-    }
-
-    .produto p,
-    .produto li {
-        font-size: 1rem;
-        max-width: 700px;
-        color: hsl(0, 1%, 32%);
-        padding: 24px 48px;
-    }
-
-    .produto {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .foto-mobile,
-    .foto-tablet {
-        display: none;
-    }
-
-    .foto-desktop {
-        display: block;
-        margin-top: 0;
-        width: auto;
-
+    #img-tela-l {
+        flex: 1;
+        height: auto;
+        order: 0;
     }
 
     .site-footer {
@@ -302,75 +290,4 @@ form input {
         color: hsl(0, 0%, 39%);
         padding: 24px 48px;
     }
-
-    .section-form {
-        flex-direction: row;
-        align-items: stretch;
-    }
-}
-
-.button-buy {
-    display: block;
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-    padding: clamp(10px, 2.5vw, 16px) clamp(16px, 4vw, 24px);
-    font-size: clamp(14px, 3.5vw, 18px);
-    font-weight: bold;
-    text-align: center;
-    border-radius: 6px;
-    cursor: pointer;
-    background-color: hsl(0, 99%, 49%);
-    color: #ffffff;
-    border: none;
-    transition: all 0.2s ease;
-}
-
-.button-buy:hover {
-    background-color: hsl(0, 99%, 42%);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.preco-destaque {
-    display: block;
-    font-size: clamp(1.2rem, 3.5vw, 1.8rem);
-    color: hsl(0, 80%, 45%);
-    margin: 15px 0 10px 0;
-}
-
-.section-form {
-    width: 100%;
-    max-width: 360px;
-    margin: 20px auto;
-}
-
-.section-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.estoque-info {
-    font-size: 0.9rem;
-    color: #555;
-    margin: 4px 0;
-}
-
-.subtotal-box {
-    background-color: #f0f4f8;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    color: hsl(231, 79%, 34%);
-    border: 1px solid #d0d7de;
-    margin-top: 5px;
-}
-
-.subtotal-box strong {
-    color: hsl(0, 80%, 45%);
 }
